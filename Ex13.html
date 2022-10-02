@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Haggai Kovacs-EX13-290922</title>
+</head>
+<body>
+    <p>
+        Type a number:
+    <input type="number" id="num1">
+    </p>
+    <p>
+        Type a single digits:
+    <input type="number" id="num2">
+    </p>
+       <button type="button" onclick="division()">Click to show how many times does the digit appier in the number</button>
+    <script>
+        function division(){
+            a= document.getElementById("num1").value
+            r=a
+            b= document.getElementById("num2").value
+            sum=0
+        while (r>0){
+            b == r%10? sum+=1: sum=sum 
+            r=Math.floor(r/10)  
+        }
+            document.write(`the digit "${b}" shows up in ${a}, ${sum} times`) 
+        }
+    </script>
+</body>
+</html>
